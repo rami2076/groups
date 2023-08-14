@@ -5,11 +5,11 @@ interface GroupCountInputProps {
     onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-const GroupCountInput: React.FC<GroupCountInputProps> = ({ value, onChange }) => {
+const GroupCountInput: React.FC<GroupCountInputProps> = ({value, onChange}) => {
     return (
         <div>
-            <label>Number of groups:</label>
-            <input type="number" min={2} value={value} onChange={onChange} />
+            <p><label>グループ数を入力してください</label></p>
+            <input type="number" min={2} value={value} onChange={onChange}/>
         </div>
     );
 };

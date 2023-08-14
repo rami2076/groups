@@ -5,11 +5,11 @@ interface ParticipantsInputProps {
     onChange: (event: React.ChangeEvent<HTMLTextAreaElement>) => void;
 }
 
-const ParticipantsInput: React.FC<ParticipantsInputProps> = ({ value, onChange }) => {
+const ParticipantsInput: React.FC<ParticipantsInputProps> = ({value, onChange}) => {
     return (
-        <div>
-            <label>Enter participant names (one per line):</label>
-            <textarea rows={6} value={value} onChange={onChange} />
+        <div className="ParticipantsInput">
+            <p><label htmlFor="participantsInput">1行ずつ分割するメンバーを入力7してください</label></p>
+            <textarea id="participantsInput" rows={6} value={value} onChange={onChange}/>
         </div>
     );
 };
