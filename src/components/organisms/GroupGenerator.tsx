@@ -46,7 +46,7 @@ const GroupGenerator: React.FC<GroupGeneratorProps> = ({
 
     return (
         <div>
-            <h1>Group Divider Tool</h1>
+            <h1>グループ分けツール</h1>
             <ParticipantsInput value={participants} onChange={onParticipantsChange}/>
             <GroupCountInput value={groupCount} onChange={onGroupCountChange}/>
             <Button onClick={generateGroups}>Generate Groups</Button>
