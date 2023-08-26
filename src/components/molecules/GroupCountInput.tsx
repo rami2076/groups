@@ -1,4 +1,5 @@
 import React from 'react';
+import './GroupCountInput.css'
 
 interface GroupCountInputProps {
     value: number;
@@ -7,9 +8,9 @@ interface GroupCountInputProps {
 
 const GroupCountInput: React.FC<GroupCountInputProps> = ({value, onChange}) => {
     return (
-        <div>
-            <p><label>グループ数を入力してください</label></p>
-            <input type="number" min={2} value={value} onChange={onChange}/>
+        <div className="GroupCountInput">
+            <label htmlFor={"GroupCountInput"}>グループ数を入力してください</label>
+            <input id="GroupCountInput" type="number" min={2} value={value} onChange={onChange}/>
         </div>
     );
 };
